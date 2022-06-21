@@ -1,6 +1,6 @@
 import { gql } from "@apollo/client"
 import { useEffect } from "react"
-import { client } from "../lib/apollo"
+import { client } from "./lib/apollo"
 
 const GET_LESSONS_QUERRY = gql`
   query{
@@ -12,7 +12,6 @@ const GET_LESSONS_QUERRY = gql`
   }
 `
  
-
 function App() {
    useEffect(() => {
     client.query({
